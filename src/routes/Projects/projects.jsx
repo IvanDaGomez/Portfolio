@@ -20,7 +20,7 @@ export default function Projects(){
         {
             title: "greatShop",
             link: "",
-            codelink: "",
+            codelink: "https://github.com/IvanDaGomez/greatShop",
             phone:"/Projectos/greatShopPhone.png",
             computer: "/Projectos/greatShopComputer.png"
         },
