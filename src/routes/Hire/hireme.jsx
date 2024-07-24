@@ -2,6 +2,8 @@
 import { useRef, useState } from 'react';
 import Header from '../../components/header';
 import { useAnimation } from '../../customHooks/useAnimation';
+import { useEffect } from 'react';
+import emailjs from "@emailjs/browser"
 export default function CuerpoContacto() {
     const form = useRef();
     const [status, setStatus] = useState(null); // null, 'success', 'error'
@@ -9,8 +11,12 @@ export default function CuerpoContacto() {
     const contactInfo = useRef(null);
 
 
+
     useAnimation({parentRef:form});
     useAnimation({parentRef:contactInfo})
+
+    useEffect(()=>window.scrollTo({ top: 0, behavior: 'smooth' }),[])
+
     const validateForm = () => {
         const errors = {};
         const formElements = form.current.elements;
@@ -39,7 +45,7 @@ export default function CuerpoContacto() {
             return;
         }
 
-        emailjs.sendForm('service_hbcf0pc', 'template_vjn5jkj', form.current, 'cgBID5GSQ7CE6GgyR')
+        emailjs.sendForm('service_hodzc0o', 'template_vjn5jkj', form.current, 'cgBID5GSQ7CE6GgyR')
             .then(() => {
                 setStatus('success');
                 setFormErrors({});

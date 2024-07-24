@@ -13,7 +13,7 @@ export default function Projects(){
         {
             title: "What's Next?",
             link: "",
-            codelink: "",
+            codelink: "https://github.com/IvanDaGomez/whats_next_completed",
             phone:"/Projectos/toDoPhone.png",
             computer: "/Projectos/toDoComputer.png"
         },
@@ -27,7 +27,7 @@ export default function Projects(){
         {
             title: "Volleyball Colombian Federation Website",
             link: "https://www.fedevolei.com.co",
-            codelink:"",
+            codelink:"https://github.com/IvanDaGomez/fedevolei",
             phone:"/Projectos/fedevoleiPhone.png",
             computer: "/Projectos/fedevoleiComputer.png"
         }
@@ -57,6 +57,10 @@ export default function Projects(){
     const arrowDown = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={30} height={30} color={"#fff"} fill={"none"}>
     <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 </svg>;
+
+
+    const svgPhone= "/phone.svg"
+    const svgComputer = "/pc.svg"
     return (
 
         <>
@@ -100,10 +104,16 @@ export default function Projects(){
                 <a href={selectedProject.codelink} target="_blank"><p>Click To See Source Code</p></a>
                 </div>
             <div className="variantsContainer" >
-                <img src="/pcYCelular.svg"  alt="PC and Phone Image" className="phoneAndPC" />
-                <img className="phoneImage" src={selectedProject.phone} alt="" />
-                <img className="computerImage" src={selectedProject.computer} alt="" />
-
+              <div className="pc">
+                {/*Resolución del Computador: 16 Ancho/10 Alto, 1668 x 1024*/}
+                <img className="computerImage"  src={selectedProject.computer} alt="" />
+                <img className="over" src={svgComputer} alt="" />
+              </div>
+                <div className="phone">
+                  {/*Resolución del celular: 10 Ancho/20 Alto, 500 x 1024 */}
+                  <img className="over" src={svgPhone}  alt="" />
+                  <img className="phoneImage" src={selectedProject.phone}  alt="" />
+                </div>
             </div>
             
         </div>

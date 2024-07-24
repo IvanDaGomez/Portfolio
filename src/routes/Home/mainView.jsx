@@ -86,13 +86,13 @@ export default function MainView(){
             <div  className="instExp">
             <div className="outerCircle">
                 <div className="circle shadow" style={{animationDelay:"200ms"}}>
-                    +10
+                    +5
                 </div></div>Projects Completed
             </div>
             <div  className="instExp">
                 <div className="outerCircle">
                 <div className="circle shadow" style={{animationDelay:"400ms"}}>
-                    +5
+                    +10
                 </div></div>Technologies Controled
             </div>
         </div>

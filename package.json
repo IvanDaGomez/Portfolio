@@ -11,6 +11,7 @@
     "test": "standard && node my-tests.js"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,7 +26,10 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "standard": "*",
+    "standard": "^17.1.0",
     "vite": "^5.2.0"
+  },
+  "eslintConfig": {
+    "extends": ["standard"]
   }
 }

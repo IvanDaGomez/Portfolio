@@ -700,34 +700,61 @@ nav:hover .bio{
 .right:hover{
   transform: scale(1.1) translateX(2px);
 }
-.projectsContainer .variantsContainer{
-  width: min(80%, 700px);
+.projectsContainer .variantsContainer {
+  width: 100%;
   margin: 20px;
+  height: 40vw;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  gap:10px;
+}
 
-  position:relative;
+.projectsContainer .variantsContainer div {
+  position: relative;
+  width: 100%;
+}
+
+.computerImage, .phoneImage {
+  position: absolute;
+  
+  left: 50%;
+  transform: translateX(-50%);
 
 }
-.phoneAndPC{
-
+.over{
   width:100%;
-  z-index: 10;
-}
-.projectsContainer .computerImage{
-  width:73%;
   position: absolute;
-  top:min(2vh, 20px);
-  left:3.5%;
-  z-index:1 ;
-}
-.projectsContainer .phoneImage{
-  width:27%;
-  position: absolute;
-  bottom:min(3vh, 30px);
-  right:2.5%;
+  inset:0;
+  height:auto;
   z-index: 2;
-  border-radius: 5px;
+  
+}
+.computerImage {
+  grid-column: 1;
+  width: 74%;
+  top: 8%;
+  z-index:1;
 }
 
+.phoneImage {
+  width: 36%;
+  top: 13%;
+  z-index:1;
+
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  .projectsContainer .variantsContainer {
+    grid-template-columns: 1fr;
+    height: 135vw;
+  }
+  .phoneImage{
+    top:17%;
+  }
+}
 
 /*----------------------------------------EXPERIENCE------------------------------------------------------*/
 
