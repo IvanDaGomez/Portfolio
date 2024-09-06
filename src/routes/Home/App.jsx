@@ -3,6 +3,7 @@ import MainView from "./mainView.jsx"
 import './App.css'
 
 function App() {
+  
   window.scrollTo({ top: 0, behavior: 'smooth' })
   return (
     <>

@@ -15,21 +15,32 @@ export default function Projects(){
             link: "",
             codelink: "https://github.com/IvanDaGomez/whats_next_completed",
             phone:"/Projectos/toDoPhone.png",
-            computer: "/Projectos/toDoComputer.png"
+            computer: "/Projectos/toDoComputer.png",
+            status: "Completed"
         },
         {
             title: "greatShop",
             link: "",
             codelink: "https://github.com/IvanDaGomez/greatShop",
             phone:"/Projectos/greatShopPhone.png",
-            computer: "/Projectos/greatShopComputer.png"
+            computer: "/Projectos/greatShopComputer.png",
+            status: "Completed"
         },
         {
             title: "Volleyball Colombian Federation Website",
             link: "https://www.fedevolei.com.co",
             codelink:"https://github.com/IvanDaGomez/fedevolei",
             phone:"/Projectos/fedevoleiPhone.png",
-            computer: "/Projectos/fedevoleiComputer.png"
+            computer: "/Projectos/fedevoleiComputer.png",
+            status: "Completed"
+        },
+        {
+          title: "Full-Stack Music Media Player",
+          link: "/Projectos/musify",
+          codelink: "",
+          phone: "",
+          computer: "/Projectos/musifyComputer.png",
+          status: "In Development"
         }
     ].reverse()
     
@@ -99,7 +110,9 @@ export default function Projects(){
                 </div>
             </div>
             <div className="infoProject">
+                
                 <h1>{selectedProject.title}</h1>
+                <p>Status: {selectedProject.status}</p>
                 <a href={selectedProject.link} target="_blank"><p>Click To See The Page</p></a>
                 <a href={selectedProject.codelink} target="_blank"><p>Click To See Source Code</p></a>
                 </div>
