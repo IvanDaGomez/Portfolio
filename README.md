@@ -17,6 +17,7 @@ This is my personal portfolio website where I showcase the projects I’ve worke
 ## Images
 ![image](https://github.com/user-attachments/assets/629102bc-f3a1-4437-bc82-b6c8d8f58cb7)
 ![image](https://github.com/user-attachments/assets/407f500f-49fb-4361-92a6-272114666e4b)
-![image](https://github.com/user-attachments/assets/f7cd8c91-6d1d-4286-9fda-b9089672e480)
+![image](https://github.com/user-attachments/assets/e982aa60-8f44-483c-b98f-dcb03809db17)
+
 
 
