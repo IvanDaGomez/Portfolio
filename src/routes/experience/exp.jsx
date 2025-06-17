@@ -21,7 +21,7 @@ export default function Experience(){
         {
             title: "CS50 Introduction to Artificial Intelligence with Python",
             offer: "Harvard",
-            completion: "60%"
+            completion: "100%"
         },
         {
             title:"Responsive Website Certification",
@@ -31,7 +31,7 @@ export default function Experience(){
         {
             title:"CS50 Web",
             offer: "Harvard",
-            completion: "40%"
+            completion: "100%"
         },
         {
             title: "Javascript Algorithms and Data Structures Certification",
@@ -61,7 +61,58 @@ export default function Experience(){
         {
             title: "Node JS Course",
             offer: "TheOdinProject",
-            completion: "60%"
+            completion: "100%"
+        },
+        {
+            title: "Learning the Art of Electronics",
+            offer: "Self-study / Book-based",
+            completion: "10%"
+        },
+        {
+            title: "Java Programming Course",
+            offer: "Bro Code (YouTube)",
+            completion: "100%"
+        },
+        {
+            title: "German Language Basics",
+            offer: "Self-study / App-based",
+            completion: "10%"
+        },
+        {
+            title: "Intro to Machine Learning with Python",
+            offer: "FreeCodeCamp",
+            completion: "100%"
+        },
+        {
+            title: "Cloud Practitioner Essentials",
+            offer: "AWS",
+            completion: "100%"
+        },
+        {
+            title: "Cloud Computing Basics",
+            offer: "AWS",
+            completion: "100%"
+        },
+        {
+            title: "Typescript Course",
+            offer: "TheOdinProject",
+            completion: "100%"
+        },
+        {
+            title: "PostgreSQL Course",
+            offer: "FreeCodeCamp YouTube",
+            completion: "100%"
+
+        },
+        {
+            title: "Docker Course",
+            offer: "FreeCodeCamp YouTube",
+            completion: "100%"
+        },
+        {
+            title: "Flask Course",
+            offer: "FreeCodeCamp YouTube",
+            completion: "100%"
         }
     ]
 
@@ -105,7 +156,7 @@ export default function Experience(){
     
         // Cleanup on unmount
         return () => observer.disconnect();
-      }, []);
+    }, []);
     return (
         <>
             <Header />

@@ -1,7 +1,7 @@
 import { maximoDivisor } from "../../functions/maximoDivisor";
 import { generateAdditionalDivs } from "../../functions/aditionalDivs";
-import { skills } from "../../../public/mySkills";
-import { services } from "../../../public/myService";
+import { skills } from "../../assets/mySkills";
+import { services } from "../../assets/myService";
 import {  useRef } from "react";
 import { useAnimation } from "../../customHooks/useAnimation";
 import { Link } from "react-router-dom";
@@ -23,36 +23,24 @@ export default function MainView() {
         <hr />
         <div className="grid">
           <img
-            src="/myPhotoEdited.png"
+            src="/myPhoto.JPG"
             alt="My Photo"
             className="bigImage"
           />
           <div className="bioContent">
-            <p>
-              Hello! I&apos;m Ivan Gomez, a passionate software developer with
-              a knack for building efficient and scalable web applications.
-              With a strong foundation in computer science and a love for
-              learning new technologies, I have honed my skills in various
-              programming languages and frameworks.
-            </p>
-            <p>
-              I have worked on various projects. My expertise includes
-              front-end development with React, HTML, CSS and JS, and back-end
-              development with Node.js
-            </p>
-            <p></p>
-            <p>
-              In addition to my technical skills, I am a strong advocate for
-              teamwork and collaboration. I believe that the best solutions
-              come from diverse perspectives and open communication. Outside of
-              work, I enjoy exploring new places, reading tech blogs, and
-              contributing to open-source projects.
-            </p>
-            <p>
-              I am always eager to take on new challenges and continue growing
-              as a developer. Feel free to reach out if you&apos;d like to
-              connect or discuss potential collaborations!
-            </p>
+          <p>
+            Hi! I&apos;m Iván Gómez, a creative and detail-oriented full-stack developer and UI/UX designer from Colombia. I&apos;m currently studying Engineering at Universidad de los Andes while building and deploying real-world apps that merge functionality and design.
+          </p>
+          <p>
+            I specialize in frontend development using React, TypeScript, HTML, and CSS, and have strong backend experience with Node.js, Express, and PostgreSQL. I also work with cloud technologies like AWS (EC2, S3, Route 53) and Docker to deploy scalable applications.
+          </p>
+          <p>
+            Beyond code, I enjoy designing intuitive user interfaces with tools like Figma and Illustrator. I&apos;m also passionate about AI, robotics, and using technology for social good.
+          </p>
+          <p>
+            Whether it’s launching a bookstore web app or supporting young athletes through my social project, I love creating impactful solutions. Let’s connect and build something great together!
+          </p>
+
             <div className="separar">
               <a href="/myFile.pdf" download>
                 <button className="boton shadow">Download CV</button>

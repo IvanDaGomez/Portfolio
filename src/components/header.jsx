@@ -5,7 +5,7 @@ export default function Header(){
     <nav>
         
         <div className="myImage">
-        <img src="../myPhoto.jpeg" alt="My Photo" />
+        <img src="/myPhoto.JPG" alt="My Photo" />
         <div className="bio">
             Ivan Gomez
         </div>

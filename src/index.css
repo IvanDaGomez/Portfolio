@@ -501,11 +501,14 @@ nav:hover .bio{
   transform: scale(1.08);
   background: #261747;
 }
-.element svg{
+.element svg {
   color: #261747;
+  stroke: #261747;
+  transition: color 0.3s, stroke 0.3s, fill 0.3s;
 }
-.element:hover svg{
-  color:white;
+.element:hover svg {
+  color: white !important;
+  stroke: white !important;
 }
 .skills{
   width:100%;
