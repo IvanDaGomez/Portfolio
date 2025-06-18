@@ -120,7 +120,11 @@ export default function MainView() {
                                 </svg>
                             </div>
                         </a>
-
+                        <a
+                            href="https://www.instagram.com/ivangomez_012?igsh=cGR4MGx1eWRtanBh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                         <div className="socialContainer discord shadow">
                             <svg
                                 className="social imgFooter"
@@ -156,7 +160,7 @@ export default function MainView() {
                                     strokeWidth="1.5"
                                 />
                             </svg>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
                 <div className="myPhoto crazyImg shadow">
