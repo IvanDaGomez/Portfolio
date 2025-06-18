@@ -205,12 +205,14 @@ nav:hover .bio{
   display:flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 
 }
 .exp div {
   font-size: 3rem;
   width:120px;
   display:flex;
+  margin: 0 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -838,11 +840,14 @@ nav:hover .bio{
   margin:auto;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap:40px;
+  gap:20px;
+  padding: 0 20px;
+
   text-align: start;
 }
 .courseElement{
   height:100%;
+  width: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

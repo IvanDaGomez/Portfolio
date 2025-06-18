@@ -2,13 +2,15 @@ import Header from "../../components/header"
 import { useEffect, useRef } from "react"
 import { maximoDivisor } from "../../functions/maximoDivisor"
 import { useAnimation } from "../../customHooks/useAnimation"
+import useUpdateBreakpoint from "../../assets/useUpdateBreakPoint"
 export default function Experience(){
     useEffect(()=>window.scrollTo({ top: 0, behavior: 'smooth' }),[])
     const experience = [
         {
             title: "National Federation of Volleyball Webpage",
             description: "Completed from beginning to final",
-            date: "July 5th of 2024"
+            date: "July 5th of 2024",
+            link: "https://www.fedevolei.com.co",
         }
     ]
 
@@ -119,7 +121,7 @@ export default function Experience(){
 
     const experienceDiv = useRef(null);
     const courseDiv = useRef(null);
-
+    const isMobile = useUpdateBreakpoint(734)
     useAnimation({ parentRef:experienceDiv });
     
     
@@ -170,15 +172,19 @@ export default function Experience(){
                                 <div>
                                     <h3>{exp.title}</h3>
                                     <span>{exp.date}</span>
+                                    
                                 </div>
                                 <p>{exp.description}</p>
+                                {exp.link &&
+                                        <a href={exp.link} target="_blank" rel="noopener noreferrer"><span>Link</span></a>
+                                    }
                             </div>
                         </div>
                     ))}
                 </div>
                 <hr />
                 <h1 style={{margin: "10px"}}>Courses</h1>
-                <div className="courseContainer" ref={courseDiv} style={{ gridTemplateColumns:(window.innerWidth>1200) ? `repeat(${maximoDivisor(courses.length)}, 1fr)`: "1fr 1fr"}}>
+                <div className="courseContainer" ref={courseDiv} style={{ gridTemplateColumns:!isMobile ? `repeat(${maximoDivisor(courses.length)}, 1fr)`: "1fr"}}>
                 {courses.map((course, index) => (
                         <div className="courseElement" key={index}>
                             

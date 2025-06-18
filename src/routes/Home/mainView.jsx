@@ -197,7 +197,7 @@ export default function MainView() {
                 </div>
                 <div className="instExp">
                     <div className="outerCircle">
-                        <div className="circle shadow" style={{ animationDelay: "200ms" }}>
+                        <div className="circle shadow">
                             +5
                         </div>
                     </div>
@@ -205,7 +205,7 @@ export default function MainView() {
                 </div>
                 <div className="instExp">
                     <div className="outerCircle">
-                        <div className="circle shadow" style={{ animationDelay: "400ms" }}>
+                        <div className="circle shadow">
                             +10
                         </div>
                     </div>
